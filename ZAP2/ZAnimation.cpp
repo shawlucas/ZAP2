@@ -101,7 +101,7 @@ string ZAnimation::GetSourceOutputCode(string prefix)
 		parent->AddDeclarationArray(rotationValuesSeg, DeclarationAlignment::Align16, (int)rotationValues.size() * 2, "AnimationRotationValue",
 			StringHelper::Sprintf("%s_values", name.c_str()), rotationValues.size(), valuesStr);
 
-		parent->AddDeclarationArray(rotationIndicesSeg, DeclarationAlignment::Align16, (int)rotationIndices.size() * 6, "AnimationRotationIndex",
+		parent->AddDeclarationArray(rotationIndicesSeg, DeclarationAlignment::Align16, (int)rotationIndices.size() * 6, "JointIndex",
 			StringHelper::Sprintf("%s_indices", name.c_str()), rotationIndices.size(), indicesStr);
 	}
 
